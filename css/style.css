@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    position: relative;
+    font-family:'Roboto', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif; 
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: linear-gradient(125deg, rgb(21, 125, 159), rgb(95, 190, 221));
+    height: 10rem;
+    position: fixed;
+    border-bottom: #7eb8e7 solid .5px;
+    z-index: 100;
+
+}
+.icon{
+    width: 11rem;
+}
+.first-section{
+  text-align: center;
+  flex: 1;
+  max-width: 7rem;
+  padding: 2rem;
+}
+.second-section{
+    
+}
+
+.sub-heading:link:visited{
+    color: white;
+    text-decoration: none;
+}
+.sub-heading{
+    padding: 2rem 0rem;
+    color: white;
+    display: inline-block;
+    box-decoration-break: clone;
+    text-decoration: none;
+}
+.sub-heading:active, :hover{
+    color: blue;
+}
+.second-section{
+   width:140rem;
+   display: grid;
+   align-items: center;
+   text-align: center;
+    text-transform: uppercase;   
+   grid-template-columns:  15rem 23rem 23rem 15rem 15rem 15rem 15rem;
+   letter-spacing: .2rem;
+   font-size: 2.3rem;
+   margin-left: 25rem;
+   font-weight: 500;
+}
+@media (max-width: 100rem) {
+    .second-section{
+      color: transparent;
+    }
+  }
+  @media (min-width:100.1rem) and(max-width:149.9rem){
+    .video-grid{
+      color: white;
+    }
+  }
+
+  @media (min-width: 150rem){
+    .video-grid{
+      color: white;
+    }
+  }
+
+.third-section{
+    flex: 1;
+    max-width: 42%;
+}
+.profile{
+    width:62%;
+    border-radius: 100px;
+    margin-top: 23%;
+
+    margin-right:50% ;
+}
+.dropdown{
+    position: relative;
+    display:inline-block;
+    border-radius: 2rem;
+    margin-left: -32rem;
+    z-index: 7rem;
+
+}
+.dropbtn{
+    color: white;
+    border: none;
+    text-decoration: none;
+    text-transform: inherit;
+    font-size: inherit;
+    background-color: transparent;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 16rem;
+    z-index: 6;
+    top:2rem;
+    bottom: -7rem;
+    border-radius: 1.2rem;
+    transition: 3s;
+}
+.dropdown-content1{
+    margin-top: -3rem;
+}
+.dropdown-content a{
+    color: black;
+    padding: 2rem 4rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: block;
+    line-height: 2rem;
+    z-index: 7rem;
+    width: 10rem;
+    background-color: inherit;
+    transition: 5s;
+}
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+    transition: 5sec;
+
+}
+
